@@ -1,0 +1,10 @@
+a:link {
+    color: blue;
+}
+.alert-info {
+    background-color: lightblue;
+    width: auto;
+    height: 50px;
+    color: black;
+    border: grey solid 1px;
+}
