@@ -13,7 +13,12 @@
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .nav-links {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
@@ -21,9 +26,8 @@
 
 li {
     background-color: lightgray;
-    justify-content: flex-end;
     text-align: center;
-    padding: 1em;
+    margin: .5em;
 }
 
 img {
@@ -31,21 +35,28 @@ img {
     height: auto;
 }
 
-.main {
-    padding: .5em;
-}
-
 .sub-section {
-    padding: .5em;
     font-style: italic;
 }
 
-h1 {
-    text-align: center;
+footer {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
 }
 
 @media screen and (min-width:500px) {
     .hidden-on-desktop {
         display: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        flex-direction: row;
+        justify-content: flex-start;
     }
 }
